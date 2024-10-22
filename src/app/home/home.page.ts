@@ -6,7 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
+  disabled: boolean = true;
+  label: string = 'My button from .ts';
+  color: 'primary' | 'secondary' = 'primary';
 
   constructor() {}
 
+  onCustomButtonClicked(args: any) {
+    console.log(args);
+  }
 }
